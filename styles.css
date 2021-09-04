@@ -71,6 +71,7 @@ body {
 .result {
     display: block;
     font-size: larger;
+    font-weight: bold;
     margin: 1rem 0rem;
 }
 footer {
