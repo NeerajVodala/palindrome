@@ -4,4 +4,3 @@ const output = document.querySelector(".result")
 
 checkButton.addEventListener("click", palindromeCheck)
 
-
