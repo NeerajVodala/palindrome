@@ -140,4 +140,3 @@ var date = {
     month: 12,
     year: 2001
 }
-getNextPalindromeDate(date)
