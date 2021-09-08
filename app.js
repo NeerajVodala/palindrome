@@ -41,11 +41,13 @@ function getDateInAllFormats(date) {
     var ddmmyyyy = date.day + date.month + date.year;
     var mmddyyyy = date.month + date.day + date.year;
     var yyyymmdd = date.year + date.month + date.day;
+    var yyyyddmm = date.year + date.day + date.month;
     var ddmmyy = date.day + date.month + date.year.slice(-2);
     var mmddyy = date.month + date.day + date.year.slice(-2);
+    var yymmdd = date.year.slice(-2) + date.month + date.day;
     var yyddmm = date.year.slice(-2) + date.day + date.month;
 
-    return [ddmmyyyy, mmddyyyy, yyyymmdd, ddmmyy, mmddyy, yyddmm];
+    return [ddmmyyyy, mmddyyyy, yyyymmdd, yyyyddmm, ddmmyy, mmddyy, yymmdd, yyddmm];
 }
 
 function checkPalindromeForAllDateFormats(date) {
