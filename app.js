@@ -211,9 +211,10 @@ function clickHandler() {
             const [ctr2, prevDate] = getPreviousPalindromeDate(date);
 
             if (ctr1 > ctr2) {
-                output.innerText = `The nearest palindrome date is ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed by ${ctr2} days.`;
+                output.innerText = `The nearest palindrome date is ${prevDate.day}-${prevDate.month}-${prevDate.year}, you missed it by ${ctr2} days.`;
+
             } else {
-                output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed by ${ctr1} days.`;
+                output.innerText = `The nearest palindrome date is ${nextDate.day}-${nextDate.month}-${nextDate.year}, you missed it by ${ctr1} days.`;
             }
         } else {
             output.innerText = "YAY! Your birthday is a palindrome";
